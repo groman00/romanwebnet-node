@@ -1,0 +1,24 @@
+@mixin media-tablet-small {
+    @media only screen and (min-width: $tablet-small-width) {
+        @content;
+    }
+}
+
+@mixin media-tablet {
+    @media only screen and (min-width:$tablet-width) {
+        @content;
+    }
+}
+
+@mixin media-desktop {
+    @media only screen and (min-width:$desktop-width) {
+        @content;
+    }
+}
+
+@mixin centered($position: absolute) {
+    position:$position;
+    top:50%;   
+    left:50%;
+    transform:translate3d(-50%, -50%, 0);
+}
