@@ -14,7 +14,7 @@ $gray-dark: #4A4A4A;
 $gray-darker: #222;
 
 
-/* 
+/*
  * Settings
  */
 $transition-speed-fast: 100ms;
@@ -22,7 +22,7 @@ $transition-speed-normal: 300ms;
 $transition-speed-slow: 500ms;
 $mobile-footer-height: 80px;
 
-/* 
+/*
  * Grid
  */
 $tablet-small-width: 640px;
@@ -31,14 +31,14 @@ $desktop-width: 1024px;
 $gutter-width: 20px;
 $gutter-width-half: $gutter-width / 2;
 
-/* 
- * Typography 
+/*
+ * Typography
  */
 
 $font-family-sans-serif: Helvetica, Arial, sans-serif;
 $font-family-serif: 'Georgia', serif;
 //$font-family-fancy: 'Roboto Slab';
-$font-family-fancy: 'Montserrat';
+$font-family-fancy: 'Lato';
 $font-family-base: $font-family-sans-serif;
 $font-color-base: $gray-dark;
 
