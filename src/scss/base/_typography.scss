@@ -45,7 +45,8 @@ h3,
 h4,
 .h4{
     font-size: $font-size-base;
-    font-weight: $font-normal;
+    font-weight: $font-bold;
+    margin-bottom: $gutter-width-half;
 }
 
 h5,
@@ -65,7 +66,22 @@ pre {
     font-size: $font-size-small;
 }
 
-a{
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+li {
+    padding: 4px 0;
+}
+
+p {
+    margin: 0 0 $gutter-width-half;
+    line-height: 1.6;
+}
+
+a {
     &,
     &:visited{
         text-decoration:none;

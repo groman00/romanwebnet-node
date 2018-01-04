@@ -12,8 +12,8 @@
     .panel{
         position: relative;
         z-index: 10;
-        
-        
+
+
         &:nth-child(2) {
             min-height: 100%;
         }
@@ -22,7 +22,7 @@
             background: $white;
             box-shadow: 0 0 ($gutter-width * 2) rgba(0, 0, 0, 1);
         }
-        
+
         &:nth-child(4) {
             background: $gray-lightest;
             //border-top: solid 2px $gray-dark;
@@ -31,25 +31,29 @@
 
         &:last-child {
             margin-bottom: $mobile-footer-height;
-        }        
+        }
 
     }
 
     .panel-heading{
-        padding-bottom: $gutter-width;
+        padding-bottom: $gutter-large;
         border-bottom: solid 1px $gray-lightest;
-        margin: $gutter-width-half 0;
+        margin: $gutter-huge 0 $gutter-large 0;
+
+        &:first-child {
+            margin-top: 0;
+        }
     }
 }
 
 @include media-tablet{
-    
-    .panel-scroller{    
-     
+
+    .panel-scroller{
+
         .panel-heading{
             font-size: 32px;
-            padding-bottom: 30px;
-            margin: 0 0 15px;
-        }   
+            // padding-bottom: 30px;
+            // margin: 0 0 15px;
+        }
     }
 }

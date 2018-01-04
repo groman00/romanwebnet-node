@@ -30,153 +30,11 @@ img{
     max-width: 100%;;
     padding-right: $gutter-width;
     padding-left: $gutter-width;
-    padding-top: $gutter-width;
+    padding-top: $gutter-huge;
     padding-bottom: $gutter-width;
     margin-right: auto;
     margin-left: auto;
 }
-
-.home-bio {
-
-    .img {
-        margin: $gutter-width auto $gutter-width-half;
-        height: 160px;
-        width: 160px;
-        box-shadow: 0 2px 2px #4a4a4a;
-    }
-
-    .copy {
-        margin: 0;
-        padding: $gutter-width $gutter-width-half;
-        text-align: center;
-    }
-}
-
-.home-page{
-    font-family: $font-family-fancy;
-    color: $white;
-
-    .home-blurb {
-        @include centered(fixed);
-        text-align:center;
-        width: 100%;
-        text-transform: uppercase;
-
-        h1 {
-            text-transform: uppercase;
-            font-size: 66px;
-            font-size: 6.6vw;
-            margin: 0 0 5px;
-            font-weight: 700;
-
-            b {
-                font-size: 80px;
-                font-size: 8vw;
-            }
-        }
-
-        h4 {
-            font-weight: 700;
-            line-height: $line-height-base;
-            font-size: 50px;
-            font-size: 5vw;
-
-            b {
-                font-size: 60px;
-                font-size: 6vw;
-            }
-        }
-    }
-
-    .contact-info {
-        font-weight: 300;
-        text-align:center;
-        width: 100%;
-        text-transform: uppercase;
-        position: absolute;
-        bottom: 0;
-        font-size: 36px;
-        font-size: 3.6vw;
-        margin-bottom: 40px;
-    }
-
-    .arrow-down{
-        position: absolute;
-        bottom: 25%;
-        height: 30px;
-        width: 30px;
-        left: 50%;
-        margin-left: -15px;
-    }
-
-    .technology-grid{
-        text-align:center;
-        color: $gray-dark;
-        .title{
-            @extend .shingle;
-            font-weight: $font-bold;
-            margin: $gutter-width-half;
-        }
-    }
-}
-
-
-@include media-tablet-small{
-
-    .container{
-        max-width: $tablet-small-width;
-    }
-
-    .home-page{
-
-        .arrow-down{
-            height: 60px;
-            width: 60px;
-            margin-left: -30px;
-        }
-    }
-}
-
-@include media-tablet{
-
-    .container{
-        max-width: $tablet-width;
-        padding-top: $gutter-width*2;
-        padding-bottom: $gutter-width*2;
-    }
-
-    .shingle{
-        padding: $gutter-width;
-    }
-
-    .home-page{
-
-        .technology-grid{
-
-            .title{
-                font-size: $font-size-large;
-                //padding: $gutter-width;
-                margin: 15px;
-            }
-        }
-    }
-
-    .home-bio{
-
-        .img{
-            margin-top: 15px;
-            margin-bottom: 35px;
-            height: 215px;
-            width: 215px;
-        }
-
-        .copy{
-            font-size: 18px;
-            line-height: 1.85;
-        }
-    }
-}
-
 
 .popover{
     position: absolute;
@@ -204,7 +62,62 @@ img{
     }
 }
 
+.flex-columns {
+    display: flex;
+    justify-content: space-between;
+
+    .column-label {
+        padding-bottom: 10px;
+    }
+}
+
+.flex-space {
+    display: flex;
+    justify-content: space-between;
+}
+
+.list {
+
+    .list-item {
+        padding-bottom: $gutter-huge;
+    }
+
+    .list-item-left {
+        padding-right: $gutter-width;
+    }
+
+    .list-item-right {
+        min-width: 15%;
+        text-align: right;
+    }
+}
+
+// @media screen and (max-width: 630px) {
+//      .skills {
+//         -ms-flex-wrap:wrap;
+//         flex-wrap: wrap
+//     }
+// }
+
+@include media-tablet-small{
+
+    .container{
+        max-width: $tablet-small-width;
+    }
+}
+
 @include media-tablet{
+
+    .container{
+        max-width: $tablet-width;
+        padding-top: $gutter-width*2;
+        padding-bottom: $gutter-width*2;
+    }
+
+    .shingle{
+        padding: $gutter-width;
+    }
+
     .popover{
         font-size: $font-size-smaller;
         padding: 8px;
@@ -215,15 +128,5 @@ img{
 
     .container{
         max-width: $desktop-width;
-    }
-
-    .home-page{
-
-        .technology-grid{
-
-            .title{
-                font-size: 22px;
-            }
-        }
     }
 }

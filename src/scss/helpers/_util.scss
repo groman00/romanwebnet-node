@@ -23,3 +23,19 @@
 .clearfix:after{
     clear: both;
 }
+
+.fg-white {
+    color: $white;
+}
+
+.fg-gray-dark {
+    color: $gray-dark;
+}
+
+.font-bold {
+    font-weight: $font-bold;
+}
+
+.font-light {
+    font-weight: $font-light;
+}
