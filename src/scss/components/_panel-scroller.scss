@@ -30,7 +30,8 @@
         }
 
         &:last-child {
-            margin-bottom: $mobile-footer-height;
+            // margin-bottom: $mobile-footer-height;
+            margin-bottom: 112px;
         }
 
     }

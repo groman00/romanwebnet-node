@@ -78,22 +78,18 @@ li {
 
 p {
     margin: 0 0 $gutter-width-half;
-    line-height: 1.6;
 }
 
 a {
     &,
+    &:hover,
     &:visited{
         text-decoration:none;
     }
 
     &,
     &:visited{
-        color: $gray-dark;
-        font-weight: $font-bold;
-    }
-
-    &:hover{
-        text-decoration: underline;
+        // color: $gray-dark;
+        // font-weight: $font-bold;
     }
 }
