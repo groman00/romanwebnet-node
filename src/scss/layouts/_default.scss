@@ -30,41 +30,20 @@ img{
     max-width: 100%;;
     padding-right: $gutter-width;
     padding-left: $gutter-width;
-    padding-top: $gutter-huge;
+    padding-top: $gutter-width + 10;
     padding-bottom: $gutter-width;
     margin-right: auto;
     margin-left: auto;
 }
 
-.popover{
-    position: absolute;
-    bottom: -10px;
-    left: 50%;
-    transform: translateX(-50%) translateY(100%);
-    background: rgb(55, 55, 55);;
-    color: $white;
-    font-size: $font-size-smallest;
-    line-height: 1;
-    padding: 5px;
-    border-radius: 5px;
-
-    &:before{
-        display: block;
-        content: '';
-        border: solid 6px transparent;
-        border-bottom-color: rgb(55, 55, 55);;
-        height: 12px;
-        width: 12px;
-        position: absolute;
-        top: 0;
-        left: 50%;
-        transform: translateX(-50%) translateY(-100%);
-    }
-}
-
 .flex-columns {
     display: flex;
     justify-content: space-between;
+    // flex-wrap: wrap;
+
+    // .column {
+    //     flex: 0 0 50%;
+    // }
 
     .column-label {
         padding-bottom: 10px;
@@ -92,13 +71,6 @@ img{
     }
 }
 
-// @media screen and (max-width: 630px) {
-//      .skills {
-//         -ms-flex-wrap:wrap;
-//         flex-wrap: wrap
-//     }
-// }
-
 @include media-tablet-small{
 
     .container{
@@ -110,17 +82,8 @@ img{
 
     .container{
         max-width: $tablet-width;
-        padding-top: $gutter-width*2;
-        padding-bottom: $gutter-width*2;
-    }
-
-    .shingle{
-        padding: $gutter-width;
-    }
-
-    .popover{
-        font-size: $font-size-smaller;
-        padding: 8px;
+        padding-top: $gutter-width * 2;
+        padding-bottom: $gutter-width * 2;
     }
 }
 

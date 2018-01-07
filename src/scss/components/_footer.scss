@@ -1,25 +1,8 @@
-.footer{
-    background: $gray-lightest;
-    height: $mobile-footer-height;
-    line-height: $mobile-footer-height;
-    font-size: $font-size-smaller;
+.footer {
     text-align: center;
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    .container{
-        padding-top:0;
-        padding-bottom:0;
-    }
 
-    a{
-        font-weight: $font-normal;
-    }
-}
-
-@include media-tablet{
-   .footer{
-        font-size: $font-size-base;
+    .back-to-top {
+        margin-top: 4px;
+        display: block;
     }
 }

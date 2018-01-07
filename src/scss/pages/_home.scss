@@ -1,20 +1,4 @@
-.home-bio {
-
-    .img {
-        margin: $gutter-width auto $gutter-width-half;
-        height: 160px;
-        width: 160px;
-        box-shadow: 0 2px 2px #4a4a4a;
-    }
-
-    .copy {
-        margin: 0;
-        padding: $gutter-width $gutter-width-half;
-        text-align: center;
-    }
-}
-
-.home-page{
+.home-page {
     font-family: $font-family-fancy;
 
     .home-blurb {
@@ -63,7 +47,7 @@
         margin-bottom: 40px;
     }
 
-    .arrow-down{
+    .arrow-down {
         position: absolute;
         bottom: 25%;
         height: 30px;
@@ -71,22 +55,12 @@
         left: 50%;
         margin-left: -15px;
     }
-
-    .technology-grid{
-        text-align:center;
-        color: $gray-dark;
-        .title{
-            @extend .shingle;
-            font-weight: $font-bold;
-            margin: $gutter-width-half;
-        }
-    }
 }
 
 
-@include media-tablet-small{
+@include media-tablet-small {
 
-    .home-page{
+    .home-page {
 
         .arrow-down{
             height: 60px;
@@ -96,45 +70,6 @@
     }
 }
 
-@include media-tablet{
+@include media-tablet {}
 
-    .home-page{
-
-        .technology-grid{
-
-            .title{
-                font-size: $font-size-large;
-                //padding: $gutter-width;
-                margin: 15px;
-            }
-        }
-    }
-
-    .home-bio{
-
-        .img{
-            margin-top: 15px;
-            margin-bottom: 35px;
-            height: 215px;
-            width: 215px;
-        }
-
-        .copy{
-            font-size: 18px;
-            line-height: 1.85;
-        }
-    }
-}
-
-@include media-desktop{
-
-    .home-page{
-
-        .technology-grid{
-
-            .title{
-                font-size: 22px;
-            }
-        }
-    }
-}
+@include media-desktop {}
