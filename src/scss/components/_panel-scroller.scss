@@ -20,7 +20,9 @@
 
     .panel-heading{
         padding-bottom: $gutter-large;
-        border-bottom: solid 1px $gray-lightest;
+        border-bottom-style: solid;
+        border-bottom-width: 1px;
+        // border-bottom: solid 1px $gray-lightest;
         margin: $gutter-huge 0 $gutter-large 0;
 
         &:first-child {

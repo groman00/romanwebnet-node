@@ -36,6 +36,10 @@ img{
     margin-left: auto;
 }
 
+.bio {
+    margin-bottom: 0;
+}
+
 .flex-columns {
     display: flex;
     justify-content: space-between;
@@ -58,7 +62,12 @@ img{
 .list {
 
     .list-item {
-        padding-bottom: $gutter-huge;
+        @extend .flex-space;
+        margin-bottom: $gutter-large;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
     }
 
     .list-item-left {
@@ -68,6 +77,14 @@ img{
     .list-item-right {
         min-width: 15%;
         text-align: right;
+    }
+}
+
+.repos {
+
+    .repo {
+        border: solid 2px $gray-dark;
+        padding: $gutter-large;
     }
 }
 
