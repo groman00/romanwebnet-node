@@ -15,9 +15,11 @@
     "skrollr": "^0.6.26"
   },
   "devDependencies": {
+    "clean-webpack-plugin": "^0.1.17",
     "copy-webpack-plugin": "^4.3.1",
     "css-loader": "^0.28.7",
     "extract-text-webpack-plugin": "^3.0.2",
+    "html-webpack-plugin": "^2.30.1",
     "node-sass": "^4.7.2",
     "sass-loader": "^6.0.6",
     "uglifyjs-webpack-plugin": "^1.1.5",
