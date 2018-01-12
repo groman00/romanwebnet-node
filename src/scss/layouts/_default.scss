@@ -20,38 +20,24 @@ img{
     max-width:100%;
 }
 
-.shingle{
-    background: $gray-lightest;
-    padding: $gutter-width-half;
-    box-shadow: 0 2px 2px rgba(0,0,0,0.25);
-}
-
 .container {
     max-width: 100%;;
-    padding-right: $gutter-width;
-    padding-left: $gutter-width;
-    padding-top: $gutter-width + 10;
-    padding-bottom: $gutter-width;
+    padding: $spacer-mobile-large;
     margin-right: auto;
     margin-left: auto;
 }
 
-.bio {
-    margin-bottom: 0;
-}
-
 .flex-columns {
-    display: flex;
-    justify-content: space-between;
-    // flex-wrap: wrap;
+    // display: flex;
+    // justify-content: space-between;
 
-    // .column {
-    //     flex: 0 0 50%;
-    // }
-
-    .column-label {
-        padding-bottom: 10px;
+    .column {
+        margin-bottom: $spacer-mobile-large;
     }
+
+    // .column-label {
+    //     padding-bottom: $spacer-mobile;
+    // }
 }
 
 .flex-space {
@@ -62,8 +48,8 @@ img{
 .list {
 
     .list-item {
-        @extend .flex-space;
-        margin-bottom: $gutter-large;
+        // @extend .flex-space;
+        margin-bottom: $spacer-mobile-huge;
 
         &:last-child {
             margin-bottom: 0;
@@ -71,22 +57,66 @@ img{
     }
 
     .list-item-left {
-        padding-right: $gutter-width;
+        // padding-right: $gutter-width;
     }
 
     .list-item-right {
-        min-width: 15%;
-        text-align: right;
+        // min-width: 15%;
+        // text-align: right;
     }
+}
+
+.bio {
+    margin-bottom: 0;
 }
 
 .repos {
 
     .repo {
         border: solid 2px $gray-dark;
-        padding: $gutter-large;
+        padding: $spacer-mobile-large;
+        margin-bottom: $spacer-mobile-large;
+    }
+
+    .list-item-right {
+        font-weight: $font-bold;
+        margin: $spacer-mobile-huge 0 0;
     }
 }
+
+.skills {
+
+    // .skills-list {
+    //     display: flex;
+
+    //     ul:last-child {
+    //         margin-left: $spacer-mobile-large;
+    //     }
+    // }
+
+    .column {
+        @extend .clearfix;
+    }
+
+    // ul {
+
+    // }
+
+    li {
+        float: left;
+        margin-right: 5px;
+
+        &:after {
+            content: ', ';
+        }
+
+        &:last-child:after {
+            content: '';
+        }
+    }
+}
+
+
 
 /*
 @include media-tablet-small{

@@ -38,26 +38,27 @@ h2,
 .h2{
     font-size: $font-size-larger;
     font-weight: $font-bold;
+    margin-bottom: $spacer-mobile;
 }
 
 h3,
 .h3{
     font-size: $font-size-large;
     font-weight: $font-normal;
+    margin-bottom: $spacer-mobile;
 }
 
 h4,
 .h4{
     font-size: $font-size-base;
     font-weight: $font-bold;
-    margin-bottom: $gutter-width-half;
+    margin-bottom: $spacer-mobile;
 }
 
 h5,
 .h5{
     font-size: $font-size-small;
     font-weight: $font-normal;
-    margin-bottom: $gutter-width-half;
 }
 
 h6,
@@ -78,11 +79,11 @@ ul {
 }
 
 li {
-    padding: 4px 0;
+    // padding: 4px 0;
 }
 
 p {
-    margin: 0 0 $gutter-width-half;
+    margin: 0 0 $spacer-mobile;
 }
 
 a {

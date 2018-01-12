@@ -30,10 +30,19 @@ $transition-speed-slow: 500ms;
 $tablet-small-width: 640px;
 $tablet-width: 768px;
 $desktop-width: 1024px;
-$gutter-width: 20px;
-$gutter-width-half: $gutter-width / 2;
-$gutter-large: 30px;
-$gutter-huge: 60px;
+
+$spacer-mobile-small: 5px;
+$spacer-mobile: 10px;
+$spacer-mobile-large: 20px;
+$spacer-mobile-huge: 40px;
+
+$spacer-desktop-small: 8px;
+$spacer-desktop: 15px;
+$spacer-desktop-large: 30px;
+$spacer-desktop-huge: 60px;
+
+
+
 
 /*
  * Typography
@@ -41,7 +50,6 @@ $gutter-huge: 60px;
 
 $font-family-sans-serif: Helvetica, Arial, sans-serif;
 $font-family-serif: 'Georgia', serif;
-//$font-family-fancy: 'Roboto Slab';
 $font-family-fancy: 'Lato';
 $font-family-base: $font-family-sans-serif;
 $font-color-base: $gray-dark;
@@ -54,8 +62,8 @@ $font-bold: 700;
 $font-size-smallest: 11px;
 $font-size-smaller: 13px;
 $font-size-small: 14px;
-$font-size-base: 18px;
-$font-size-large: 20px;
+$font-size-base: 16px;
+$font-size-large: 18px;
 $font-size-larger: 24px;
 $font-size-largest: 36px;
 
