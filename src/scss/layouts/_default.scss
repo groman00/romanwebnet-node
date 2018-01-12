@@ -47,6 +47,10 @@ img{
 
 .bio {
     margin-bottom: 0;
+
+    a {
+        font-weight: $font-bold;
+    }
 }
 
 .repos {
