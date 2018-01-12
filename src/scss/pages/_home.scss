@@ -1,8 +1,11 @@
 .home-page {
-    font-family: $font-family-fancy;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
 
     .home-blurb {
-        @include centered(fixed);
+        @include centered();
         text-align:center;
         width: 100%;
         text-transform: uppercase;

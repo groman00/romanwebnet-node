@@ -2,19 +2,13 @@
     height: 100%;
     width: 100%;
 
-    .panel-background{
-        position: fixed;
-        height: 100%;
-        width: 100%;
-        top: 0;
-    }
-
     .panel{
         position: relative;
         z-index: 10;
+        min-height: 100%;
 
-        &:nth-child(2) {
-            min-height: 100%;
+        &:last-child {
+            min-height: 0;
         }
     }
 
