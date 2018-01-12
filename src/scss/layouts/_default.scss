@@ -22,47 +22,26 @@ img{
 
 .container {
     max-width: 100%;;
-    padding: $spacer-mobile-large;
+    padding: $spacer-mobile-huge $spacer-mobile-large;
     margin-right: auto;
     margin-left: auto;
 }
 
 .flex-columns {
-    // display: flex;
-    // justify-content: space-between;
 
     .column {
         margin-bottom: $spacer-mobile-large;
     }
-
-    // .column-label {
-    //     padding-bottom: $spacer-mobile;
-    // }
-}
-
-.flex-space {
-    display: flex;
-    justify-content: space-between;
 }
 
 .list {
 
     .list-item {
-        // @extend .flex-space;
         margin-bottom: $spacer-mobile-huge;
 
         &:last-child {
             margin-bottom: 0;
         }
-    }
-
-    .list-item-left {
-        // padding-right: $gutter-width;
-    }
-
-    .list-item-right {
-        // min-width: 15%;
-        // text-align: right;
     }
 }
 
@@ -86,21 +65,9 @@ img{
 
 .skills {
 
-    // .skills-list {
-    //     display: flex;
-
-    //     ul:last-child {
-    //         margin-left: $spacer-mobile-large;
-    //     }
-    // }
-
     .column {
         @extend .clearfix;
     }
-
-    // ul {
-
-    // }
 
     li {
         float: left;
@@ -116,29 +83,78 @@ img{
     }
 }
 
+.experience {
+
+    h5 {
+        margin-bottom: $spacer-mobile;
+    }
+}
 
 
-/*
-@include media-tablet-small{
+
+@include media-tablet-small {
 
     .container{
         max-width: $tablet-small-width;
     }
 }
 
-@include media-tablet{
+@include media-tablet {
 
     .container{
         max-width: $tablet-width;
-        padding-top: $gutter-width * 2;
-        padding-bottom: $gutter-width * 2;
+        padding: $spacer-tablet-huge $spacer-tablet-large;
+    }
+
+    .flex-columns {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .list {
+
+        .list-item {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .list-item-left {
+            padding-right: $spacer-tablet-large;
+        }
+
+        .list-item-right {
+            min-width: 20%;
+            text-align: right;
+        }
+    }
+
+    .skills {
+
+        li {
+            float: none;
+            margin-right: 0;
+
+            &:after {
+                content: '';
+            }
+        }
+    }
+
+    .bio {
+        font-size: $font-size-tablet-large;
+    }
+
+    .repos {
+
+        .list-item-right {
+            margin: 0;
+        }
     }
 }
 
-@include media-desktop{
+@include media-desktop {
 
     .container{
         max-width: $desktop-width;
     }
 }
-*/

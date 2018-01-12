@@ -78,17 +78,12 @@ ul {
     list-style: none;
 }
 
-li {
-    // padding: 4px 0;
-}
-
 p {
     margin: 0 0 $spacer-mobile;
 }
 
 a {
     &,
-    // &:hover,
     &:visited{
         text-decoration: none;
     }
@@ -100,5 +95,35 @@ a {
 
     &:hover{
         text-decoration: underline;
+    }
+}
+
+@include media-tablet {
+
+    body {
+        font-size: $font-size-tablet-base;
+    }
+
+    h2,
+    .h2{
+        font-size: $font-size-tablet-larger;
+        margin-bottom: $spacer-tablet;
+    }
+
+    h3,
+    .h3{
+        font-size: $font-size-tablet-large;
+        margin-bottom: $spacer-tablet;
+    }
+
+    h4,
+    .h4{
+        font-size: $font-size-tablet-base;
+        margin-bottom: $spacer-tablet;
+    }
+
+    h5,
+    .h5{
+        font-size: $font-size-tablet-small;
     }
 }

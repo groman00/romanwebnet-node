@@ -1,3 +1,4 @@
+
 /*
  * Theme Colors
  */
@@ -20,8 +21,6 @@ $gray-darker: #222;
 $transition-speed-fast: 100ms;
 $transition-speed-normal: 300ms;
 $transition-speed-slow: 500ms;
-// $mobile-footer-height: 80px;
-
 
 
 /*
@@ -36,12 +35,10 @@ $spacer-mobile: 10px;
 $spacer-mobile-large: 20px;
 $spacer-mobile-huge: 40px;
 
-$spacer-desktop-small: 8px;
-$spacer-desktop: 15px;
-$spacer-desktop-large: 30px;
-$spacer-desktop-huge: 60px;
-
-
+$spacer-tablet-small: 8px;
+$spacer-tablet: 15px;
+$spacer-tablet-large: 30px;
+$spacer-tablet-huge: 60px;
 
 
 /*
@@ -66,6 +63,12 @@ $font-size-base: 16px;
 $font-size-large: 18px;
 $font-size-larger: 24px;
 $font-size-largest: 36px;
+
+$font-size-tablet-small: 16px;
+$font-size-tablet-base: 18px;
+$font-size-tablet-large: 20px;
+$font-size-tablet-larger: 26px;
+
 
 $line-height-base: 1.6;
 $line-height-heading: 1.1;

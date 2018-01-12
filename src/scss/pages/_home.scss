@@ -9,16 +9,12 @@
 
         h1 {
             text-transform: uppercase;
-            // font-size: 66px;
-            // font-size: 6.6vw;
             font-size: 56px;
             font-size: 5.6vw;
             margin: 0 0 5px;
             font-weight: 700;
 
             b {
-                // font-size: 80px;
-                // font-size: 8vw;
                 font-size: 70px;
                 font-size: 7vw;
             }
@@ -28,14 +24,10 @@
             margin:0;
             font-weight: 700;
             line-height: $line-height-base;
-            // font-size: 50px;
-            // font-size: 5vw;
             font-size: 40px;
             font-size: 4vw;
 
             b {
-                // font-size: 60px;
-                // font-size: 6vw;
                 font-size: 50px;
                 font-size: 5vw;
             }
@@ -49,8 +41,6 @@
         text-transform: uppercase;
         position: absolute;
         bottom: 0;
-        // font-size: 36px;
-        // font-size: 3.6vw;
         font-size: 29px;
         font-size: 2.9vw;
         margin-bottom: 40px;
@@ -66,7 +56,7 @@
     }
 }
 
-/*
+
 @include media-tablet-small {
 
     .home-page {
@@ -78,4 +68,3 @@
         }
     }
 }
-*/
