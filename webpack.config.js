@@ -4,10 +4,12 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const CleanWebpackPlugin = require('clean-webpack-plugin')
+const CleanWebpackPlugin = require('clean-webpack-plugin');
+const HtmlWebpackInlineSourcePlugin = require('html-webpack-inline-source-plugin');
 const isProd = process.env.NODE_ENV === 'production';
 const plugins = [
-    new ExtractTextPlugin('css/style.[chunkhash].css'),
+    new CleanWebpackPlugin([path.resolve(__dirname, './dist')], {}),
+    new ExtractTextPlugin('css/style.css'),
     new CopyWebpackPlugin([
         {
             from: './static'
@@ -17,10 +19,12 @@ const plugins = [
         filename: 'index.html',
         template: './src/templates/index.html',
         minify: {
-            collapseWhitespace: isProd
-        }
+            collapseWhitespace: isProd,
+            minifyCSS: isProd
+        },
+        inlineSource: '.(js|css)$' // embed all javascript and css inline
     }),
-    new CleanWebpackPlugin([path.resolve(__dirname, './dist')], {})
+    new HtmlWebpackInlineSourcePlugin()
 ];
 
 if (isProd) {
@@ -34,7 +38,7 @@ module.exports = {
     entry: './src/js/main.js',
     output: {
         path: path.resolve(__dirname, './dist'),
-        filename: 'js/bundle.[chunkhash].js',
+        filename: 'js/bundle.js',
         publicPath: '/'
     },
     module: {
