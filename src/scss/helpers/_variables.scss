@@ -11,8 +11,10 @@ $gray-lightest: #e9e9e9;
 $gray-lighter: #cccccc;
 $gray-light: #aaaaaa;
 $gray-medium: #7a7a7a;
-$gray-dark: #4A4A4A;
+$gray-dark: #383232;
+// $gray-dark: #4A4A4A;
 $gray-darker: #222;
+$new-color: #b1b1ae;
 
 
 /*
@@ -45,9 +47,10 @@ $spacer-tablet-huge: 60px;
  * Typography
  */
 
-$font-family-sans-serif: Helvetica, Arial, sans-serif;
+$font-family-sans-serif: 'Lato', Helvetica, Arial, sans-serif;
 $font-family-serif: 'Georgia', serif;
-$font-family-fancy: 'Lato';
+// $font-family-fancy: 'Lato';
+$font-family-fancy: 'EB Garamond';
 $font-family-base: $font-family-sans-serif;
 $font-color-base: $gray-dark;
 
