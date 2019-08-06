@@ -1,65 +1,65 @@
 .pull-right{
-    float: right;
+  float: right;
 }
 
 .pull-left{
-    float: left;
+  float: left;
 }
 
 .text-center{
-    text-align: center;
+  text-align: center;
 }
 
 .hide{
-    display: none;
+  display: none;
 }
 
 .clearfix:before,
 .clearfix:after{
-    display: table;
-    content: " ";
+  display: table;
+  content: " ";
 }
 
 .clearfix:after{
-    clear: both;
+  clear: both;
 }
 
 .fg-white {
-    color: $white;
+  color: $white;
 }
 
 .fg-gray-dark {
-    color: $gray-dark;
+  color: $gray-dark;
 }
 
 .bg-white {
-    background-color: $white;
+  background-color: $white;
 }
 
 .bg-gray-lightest {
-    background-color: $gray-lightest;
+  background-color: $gray-lightest;
 }
 
 .bg-gray-darker {
-    background-color: $gray-darker;
+  background-color: $gray-darker;
 }
 
 .font-bold {
-    font-weight: $font-bold;
+  font-weight: $font-bold;
 }
 
 .font-light {
-    font-weight: $font-light;
+  font-weight: $font-light;
 }
 
 .font-large {
-    font-size: $font-size-large;
+  font-size: $font-size-large;
 }
 
 .bb-gray-dark {
-    border-bottom-color: $gray-dark;
+  border-bottom-color: $gray-dark;
 }
 
 .bb-gray-lightest {
-    border-bottom-color: $gray-lightest;
+  border-bottom-color: $gray-lightest;
 }
