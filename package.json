@@ -11,8 +11,7 @@
     "server": "node ./server.js"
   },
   "dependencies": {
-    "express": "^4.16.2",
-    "skrollr": "^0.6.26"
+    "express": "^4.16.2"
   },
   "devDependencies": {
     "clean-webpack-plugin": "^0.1.17",
