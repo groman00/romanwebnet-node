@@ -11,7 +11,7 @@
     "server": "node ./server.js"
   },
   "dependencies": {
-    "express": "^4.16.2"
+    "express": "^4.17.3"
   },
   "devDependencies": {
     "clean-webpack-plugin": "^0.1.17",
